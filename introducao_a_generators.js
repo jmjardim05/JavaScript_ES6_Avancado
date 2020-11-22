@@ -12,7 +12,7 @@ console.log(id === id2); //false, pois cada Symbol é único
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Symbol
 
 // podemos usar Symbol.iterator para tornar um objeto iterável
-// o exemplo abaixo não é a forma correta de iterar pelas chaves e valores de um objeto
+// o exemplo abaixo NÃO é a forma correta de iterar pelas chaves e valores de um objeto
 // https://2ality.com/2015/02/es6-iteration.html
 // seção 2.8 Plain objects are not iterable
 const obj = {
