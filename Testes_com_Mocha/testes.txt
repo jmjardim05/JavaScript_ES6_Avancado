@@ -1,0 +1,10 @@
+// Node.js inciar um projeto (package)
+npm init -y
+
+// baixar a dependência mocha
+npm i --save-dev mocha
+
+os testes são executados nos arquivos dentro da pasta 'test'
+
+// para trodar o teste 
+npm run test
