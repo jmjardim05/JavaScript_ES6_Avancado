@@ -4,7 +4,16 @@ npm init -y
 // baixar a dependência mocha
 npm i --save-dev mocha
 
+https://mochajs.org/
+
 os testes são executados nos arquivos dentro da pasta 'test'
 
 // para trodar o teste 
 npm run test
+
+
+
+// biblioteca de assert - Chai
+npm i --save-dev chai
+
+https://www.chaijs.com/

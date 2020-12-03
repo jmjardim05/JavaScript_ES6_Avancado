@@ -2,6 +2,8 @@
 const assert = require("assert"); // assert é uma função nativa do node.js
 const Math = require("../src/math.js"); // importa a classe que iremos testar
 
+const expect = require("chai").expect; // importa a função expect da biblioteca chai
+
 // describe(string, fn) => função do Mocha que descreve a funcionalidade e executa os testes
 describe("Classe Math", function(){
     let math;
@@ -18,10 +20,18 @@ describe("Classe Math", function(){
         b = 2;
     });
 
+    it("Classe com funções matemáticas", function() {
+        // exepmlos com chai
+        expect(math).to.have.property("descricao").equals("Classe com funções matemáticas");
+        expect(math).to.have.property("descricao").is.a("string");
+    });
+
     // it(string, fn) => descreve o teste e executa
     it("Somar dois números", function(){
         try {
-            assert.strictEqual(math.soma(a, b), a + b);
+            // assert.strictEqual(math.soma(a, b), a + b);
+            expect(math.soma(a, b)).to.equal(a + b);
+            // expect(valor).to.equal(valor que precisa ser igual) // biblioteca chai
         }
         catch {
             throw new Error("O resultado falhou");

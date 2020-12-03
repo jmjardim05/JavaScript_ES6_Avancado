@@ -1,4 +1,5 @@
 class Math {
+    descricao = "Classe com funções matemáticas";
     soma = (a, b) => a + b;
     // teste com método assíncrono
     subtrair = (a, b, callback) => { 
