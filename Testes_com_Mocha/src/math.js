@@ -7,6 +7,9 @@ class Math {
     };
     dividir = (a, b) => a / b;
     multiplicar = (a, b) => a * b;
+    potenciacao = (a, b, res) => {
+        res.print(a ** b);
+    }
 }
 
 module.exports = Math;
